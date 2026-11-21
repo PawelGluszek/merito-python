@@ -2,7 +2,7 @@
 
 Narzędzie CLI do wyszukiwania zduplikowanych plików w drzewie katalogów. Rekurencyjnie przegląda katalogi, filtruje pliki po nazwie i rozmiarze, oblicza skróty SHA-256 i raportuje duplikaty.
 
-**Autor:** Pawel Gluszek  
+**Autorzy:** Pawel Gluszek, Piotr Klebaniuk, Łukasz Banaś  
 **Python:** 3.12+  
 **Temat:** Wyszukiwarka zduplikowanych plików (temat 2)
 
