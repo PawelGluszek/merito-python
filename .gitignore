@@ -8,9 +8,7 @@ build/
 *.egg
 
 # Virtual environment
-venv/
 .venv/
-env/
 
 # IDE
 .idea/

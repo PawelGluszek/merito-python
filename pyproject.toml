@@ -1,0 +1,11 @@
+[project]
+name = "merito-python"
+version = "0.1.0"
+description = "Duplicate file finder — advanced Python course project"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]

@@ -20,31 +20,26 @@ Narzędzie CLI do wyszukiwania zduplikowanych plików w drzewie katalogów. Reku
 git clone <url_repozytorium>
 cd merito-python
 
-# Utworzenie środowiska wirtualnego
-python3 -m venv venv
-source venv/bin/activate    # Linux/macOS
-# venv\Scripts\activate     # Windows
-
 # Instalacja zależności
-pip install -r requirements.txt
+uv sync
 
 # Generowanie danych testowych
-python -m data.generate_test_data --output test_data --count 100
+uv run python -m data.generate_test_data --output test_data --count 100
 
 # Uruchomienie wyszukiwarki duplikatów
-python main.py test_data
+uv run python main.py test_data
 
 # Uruchomienie z filtrami
-python main.py test_data --pattern "*.txt" "*.csv" --min-size 1KB
+uv run python main.py test_data --pattern "*.txt" "*.csv" --min-size 1KB
 
 # Tryb procesów (zamiast wątków)
-python main.py test_data --use-processes
+uv run python main.py test_data --use-processes
 
 # Uruchomienie benchmarku GIL
-python main.py --benchmark test_data
+uv run python main.py --benchmark test_data
 
 # Uruchomienie testów
-python -m pytest tests/ -v
+uv run pytest tests/ -v
 ```
 
 ### Opcje CLI
